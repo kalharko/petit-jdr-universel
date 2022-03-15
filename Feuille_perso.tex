@@ -1,0 +1,156 @@
+% !TEX TS-program = pdflatex
+% !TEX encoding = UTF-8 Unicode
+
+% Article template :)
+
+% General stuff
+\documentclass[11pt]{article} % use larger type; default would be 10pt
+
+\usepackage[utf8]{inputenc} % set input encoding (not needed with XeLaTeX)
+\usepackage[french]{babel} % Language setting
+\usepackage [T1] {fontenc}
+\pdfmapfile{Overpass.map}
+
+% Geometry
+\usepackage{geometry}
+\geometry{a4paper}
+\geometry{margin=1cm}
+
+% Usefull packages
+\usepackage{eso-pic} % to add background images to the article
+\usepackage{graphicx} % support the \includegraphics command and options
+%\usepackage[colorlinks=false]{hyperref}
+\usepackage{titlesec} % to change default styles of /sections, /title ...
+\usepackage{xcolor}
+\usepackage{tabto}
+%\usepackage{amssymb}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{lettrine}
+\usepackage{oldgerm}
+\usepackage{yfonts}
+\usepackage{multicol}
+\usepackage{blindtext}
+\usepackage{svg}
+\usepackage{tabularx}
+\usepackage{multirow}
+%\usepackage{multicolumn}
+
+\newcommand{\enluminure}[2]{\lettrine[lines=3]{\small \initfamily #1}{#2}}
+
+
+% Style !
+\definecolor{10Black}{cmyk}{0, 0, 0, 0.10} % 10% of black
+\definecolor{20Black}{cmyk}{0, 0, 0, 0.20} % 20% of black
+\definecolor{80Black}{cmyk}{0, 0, 0, 0.80} % 80% of black
+\definecolor{95Black}{cmyk}{0, 0, 0, 0.95} % 60% of black
+%\color{10Black}
+%\pagecolor{black}
+
+% New commands
+\newcommand{\myjump}[1][1]{\mbox{}\\[#1cm]}
+
+
+\begin{document}
+\pagestyle{empty}
+
+
+\noindent
+\begin{tabularx}{\textwidth}{XX|p{4.2cm}}
+%\hline
+
+    \sc{\textbf{Nom}} & \multicolumn{2}{@{}l}{\sc{\textbf{Titre\hspace{9cm} XP}}}\\\hline
+
+
+    \multicolumn{3}{@{}l}{\sc{\textbf{Description}}}\\
+    \\\hline
+
+    \sc{\textbf{PV}} & \sc{\textbf{Stress}} & \multirow[t]{4}{=}{\sc{\textbf{Connaissances}}}\\
+
+    \small 10 stress+1\newline
+    7  deplacement-1\newline
+    5  stress+1\newline
+    3  blessure grave\newline
+    0  evanouissement\newline
+    -1 mort \hspace{4.5cm}/&
+    \small 1 deg+1\newline
+    2 deg+2, dep+1\newline
+    3 OC+3\newline
+    4 MJ peut mentir\newline
+    5 Traumatisme\newline
+    6 Paralysie \hspace{4.6cm}/6 &\\\cline{1-2}
+
+    \vspace{10.8cm}\scalebox{0.8}{\includegraphics[30,0][0,0]{images/diagram_agilite.png}} &
+    \vspace{10.8cm}\scalebox{0.8}{\includegraphics[30,0][0,0]{images/diagram_force.png}} &\\
+
+    OC: 17 -\newline deg: & OC: 17 -\newline deg: &\\\hline
+
+    \multicolumn{3}{l}{}\\
+    \multicolumn{3}{@{}l}{\emph{Armes}\sc{\textbf{\hspace{9.45cm}Esquive \hspace{2cm} Déplacement}}}\\\hline
+
+    \\\\\hline
+    \\\\\hline
+    \\\\\hline
+    \\\\\hline
+
+    \multicolumn{3}{l}{}\\
+    \multicolumn{3}{@{}l}{\emph{Armures}\sc{\textbf{\hspace{9cm} Def totale \hspace{2cm}Def max}}}\\\hline
+    \multicolumn{3}{@{}l}{
+
+    {\begin{tabularx}{\textwidth}{Xc|cX}
+        &&&\\
+        &&&\\\cline{1-1}\cline{4-4}
+        &&&\\
+        &&&\\\cline{1-1}\cline{4-4}
+        &&&\\
+        &&&\\\cline{1-1}\cline{4-4}
+        &&&\\
+        &&&\\\cline{1-1}\cline{4-4}
+    \end{tabularx}}
+    }\\
+
+\end{tabularx}
+
+
+
+
+
+
+\newpage
+\begin{tabularx}{\textwidth}{X}
+
+\sc\textbf{Inventaire}\\\hline
+
+\\\\\hline
+\\\\\hline
+\\\\\hline
+\\\\\hline
+\\\\\hline
+\\\\\hline
+\\\\\hline
+\\\\\hline
+\\\\\hline
+\\\\\hline
+\\\\\hline
+\\\\\hline
+\\\\\hline
+\\\\\hline
+\\\\\hline
+\\\\\hline
+\\\\\hline
+\\\\\hline
+\\\\\hline
+\\\\\hline
+\\\\\hline
+\\\\\hline
+\\\\\hline
+\\\\\hline
+\\\\\hline
+\\\\\hline
+\\\\\hline
+\\\\\hline
+Date de création et propriétaire de cette fiche\\\hline
+
+\end{tabularx}
+
+\end{document}
