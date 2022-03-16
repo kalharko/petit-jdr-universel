@@ -1,0 +1,224 @@
+% !TEX TS-program = pdflatex
+% !TEX encoding = UTF-8 Unicode
+
+% Article template :)
+
+% General stuff
+\documentclass[11pt]{article} % use larger type; default would be 10pt
+
+\usepackage[utf8]{inputenc} % set input encoding (not needed with XeLaTeX)
+\usepackage[french]{babel} % Language setting
+\usepackage [T1] {fontenc}
+\pdfmapfile{Overpass.map}
+
+% Geometry
+\usepackage{geometry}
+\geometry{a4paper}
+\geometry{margin=2cm}
+
+% Usefull packages
+\usepackage{eso-pic} % to add background images to the article
+\usepackage{graphicx} % support the \includegraphics command and options
+%\usepackage[colorlinks=false]{hyperref}
+\usepackage{titlesec} % to change default styles of /sections, /title ...
+\usepackage{xcolor}
+\usepackage{tabto}
+%\usepackage{amssymb}
+\usepackage{amssymb}
+\usepackage{multirow}
+\usepackage{tikz}
+\usetikzlibrary{arrows,automata,positioning}
+\usepackage{amsmath}
+\usepackage{lettrine}
+\usepackage{oldgerm}
+\usepackage{yfonts}
+\usepackage{multicol}
+\usepackage{blindtext}
+\usepackage{svg}
+\usepackage{tabularx}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,
+    urlcolor=cyan,
+    pdftitle={Overleaf Example},
+    pdfpagemode=FullScreen,
+    }
+
+\newcommand{\enluminure}[2]{\lettrine[lines=3]{\small \initfamily #1}{#2}}
+
+
+% Style !
+\definecolor{10Black}{cmyk}{0, 0, 0, 0.10} % 10% of black
+\definecolor{20Black}{cmyk}{0, 0, 0, 0.20} % 20% of black
+\definecolor{80Black}{cmyk}{0, 0, 0, 0.80} % 80% of black
+\definecolor{95Black}{cmyk}{0, 0, 0, 0.95} % 60% of black
+%\color{10Black}
+%\pagecolor{black}
+
+% New commands
+\newcommand{\myjump}[1][1]{\mbox{}\\[#1cm]}
+
+
+\begin{document}
+\pagestyle{empty}
+
+\begin{center}
+    \textbf{Petit JDR universel}
+
+    Règles de base
+\end{center}
+
+\enluminure{P}{eut} importe la quantité de règles qu'un jdr offre, on attendras toujours du MJ qu'il juge les situations non régulés, qu'il improvise et applique la règle du cool. C'est pourquoi, ce jdr propose si peu de règles, il repose sur les accords qui existes entre joueurs et MJ.
+
+
+\myjump[0]
+\textbf{\huge Joueurs}
+
+\begin{center}
+paragraph : relations sociales / objectif du jdr
+\end{center}
+
+
+
+\myjump[0]
+\textbf{Feuille de personnages}
+
+
+\noindent
+\begin{tabularx}{\textwidth}{cXcX}
+\hline
+    \scalebox{0.92}{\includegraphics{images/heart.png}} & PV max + 1 &
+    \scalebox{0.05}{\includegraphics{images/chestplate.png}} & Defense max + 1\\
+
+    \scalebox{0.03}{\includegraphics{images/cible.png}} & Objectif de Combat (OC) - 3, une valeur différente pour les armes d'agilité et de force &
+    \scalebox{0.025}{\includegraphics{images/sword.png}} & Augmente le bonus de dégats des armes de force\\
+
+
+    \scalebox{0.03}{\includegraphics{images/esquive.png}} & Esquive + 1, l'esquive augemente de 1 l'OC d'un ennemy vous attaquant&
+    \scalebox{0.05}{\includegraphics{images/deplacement.png}} & Déplacement + 1\\
+
+    \scalebox{0.025}{\includegraphics{images/porte.png}} & Porté + 2/dégats d'agilité + 1. Détermine la porté des armes à dstances et le bonus de dégats des armes d'agilité &
+    \scalebox{0.065}{\includegraphics{images/pouch.png}} & Augmente de 1 le nombre d'armes pouvant être portées et utilisés sans malus en combat\\
+
+\hline
+    \textbf{PV} &Lorsque le personnage atteint 3 PV, il recoit une blessure grave décrite par le MJ et le besoin de s'alliter un certain nombre de jours (?) &
+    \textbf{Stress} & Par défaut à 0/6, augmenté par le MJ. Stress au delas du niveau 6 est à la discrétion du MJ\\
+\hline
+\end{tabularx}
+
+
+
+
+\myjump[0.5]
+\textbf{Création de personnage}\newline
+Distribuer 8 points d'expérience entre l'arbre d'agilité et de force. Distribuer 6 points de connaissances. Il n'est pas possible d'augmenter une connaissance à plus de 2. 4 de déplacement de base. 8 de porté de base.
+
+\myjump[0]
+\textbf{Combat}\newline
+Lorsque votre personnage veut attaquer une créature, il n'y a qu'un seul jet de dés à faire pour connaître les dégats que vous infligerez.
+
+$$
+\left\{
+    \begin{array}{ll}
+        2d6 > \mbox{OC force ou agilité} + \mbox{bonnus degâts force ou agilité} + \mbox{bonus dégat arme}\\
+2d6 \leq \mbox{OC force ou agilité}
+    \end{array}
+\right.
+$$
+
+\noindent Si vous utilisez une arme de force (marteau, espadon, épée...), votre OC est calculé en soustrayant à 17, trois fois le nombre de cibles atteintes dans votre arbre de force. Et votre bonus de dégâts correspond au nombre d'épée atteintes dans votre arbre de force.\newline
+Si vous utilisez une arme d'agilité (fouet, dague, épée...), votre OC se calcul avec le nombre de cibles atteintes dans votre arbre d'agilité. Et votre bonus de dégats correspond au nombre d'arc atteint dans votre arbre d'agilité.\newline
+Dans le cas des armes à distances rechargeable (arc, arbalette arme à feu... par opposition aux armes de lancer), le bonus de dégâts de l'arbre ne s'applique pas. Si le projectile a des effets, les appliquer tout de suite.
+
+
+
+
+
+
+
+
+
+
+\newpage
+\textbf{\huge Maître du Jeu}
+
+\enluminure{L}{'improvisation} ne peut pas être utilisé pour solidifier du gameplay. Si par exemple la magie fait partie de votre univers mais qu'il n'y a pas de règles qui explique son fonctionement aux joueurs; alors cette magie est un outil scénaristique pour le MJ plutôt qu'un élément de gameplay pour les joueurs.
+
+\myjump[0]
+\textbf{Modules}\newline
+\noindent Pour ajouter des éléments de gameplay au set de règles de ce jeu de rôle, vous pouvez ajourter des modules que vous retrouverez sur la page suivante : \href{https://github.com/kalharko/petit-jdr-universel}{github.com/kalharko/petit-jdr-universel}.
+
+
+
+
+\myjump[0]
+\textbf{Compétances} + scenarium\newline
+Le cadre de \emph{compétence} de la feuille de personnage recueille tous les domaines où le personnage possède une maitrise. Comme ce jeu ne requièrt pas de jet de dés pour accomplir des actions hors combat, c'est toujours au MJ de juger si un personnage sera capable ou non de réaliser une action. Ce jugement doit prendre en compte les compétences du personnage, sa condition et l'histoire. Les domaines techniques sont très faciles à juger, quelqu'un qui ne s'est jamais entrainé au crochetage, ne peut pas crocheter. Pour les situations plus nuancés et complexes le MJ doit prendre en compte l'histoire et choisir le jugement qui va ajouter le plus de drame et de rebondissement à l'histoire.\newline\newline
+\begin{tabularx}{\linewidth}{|X}
+\emph{Biglour le voleur a été payé pour s'introduire dans les archives de la guilde marchande et modifier un registre. Grâce à sa compétence crochetage 2, Biglour a prévu de s'introduire par une porte de service. Mais il a alerté la garde sur son chemin et doit maintenant se dépécher de crocheter. Le MJ prends en compte que les archives sont protégés par des serrures de bonne facture et Biglour aurais mis du temps à crocheter.\newline
+Le MJ doit juger quelle issue offre le plus de drame et de ramifications futur à l'histoire : échapper de peu à la garde et faire qu'il rencontera une patrouille en ressortant, ou devoir confronter la garde. }\\
+\end{tabularx}
+\myjump[0.4]
+Les compétences servent aussi joueurs pour justifier la réussite des actions qu'ils souhaitent entreprendre. Certaines compétences ne sont atteingnables que par l'investissement de points d'XP dans les arbres d'agilité et de force. Ces compétences sont utilisées comme toutes les autres, par exemple un joueur dont le personnage a la compétence puissant peut justifier qu'il défonce une porte.
+
+\myjump[0]
+\textbf{Combat}\newline
+En combat les dégats des forces opposant les joueurs sont calculés ainsi :
+
+\noindent
+\begin{tabular}{c|c}
+    1d6 > 3 + esquive de la cible & dégats haut \\
+    1d6 $\leq$ 3 + esquive de la cible & dégats bas \\
+\end{tabular}
+
+
+
+\myjump[0.4]\noindent
+\begin{tabularx}{\textwidth}{cX|cX}
+    \sc{\textbf{Armes}} & & \sc{\textbf{Créatures}} &\\
+    Épée & 5 dégats & Goblin & 8-14 dégats; 10 pv\\
+    Marteau & 6 dégats & Troll & testest\\
+    Arc & 4 dégats & Griphon & testest\\
+    Flèche & 3 dégats & Slime & testes\\
+
+
+\end{tabularx}
+
+
+
+
+
+\newpage
+\begin{center}
+\textbf{Distribution 2d6}
+\myjump
+\begin{tabular}{c|c|c|c|c|c|c|}
+     & 1& 2& 3& 4& 5& 6\\\cline{2-7}
+    1& 2& 3& 4& 5& 6& 7\\\cline{2-7}
+    2& 3& 4& 5& 6& 7& 8\\\cline{2-7}
+    3& 4& 5& 6& 7& 8& 9\\\cline{2-7}
+    4& 5& 6& 7& 8& 9&10\\\cline{2-7}
+    5& 6& 7& 8& 9&10&11\\\cline{2-7}
+    6& 7& 8& 9&10&11&12\\\cline{2-7}
+\end{tabular}
+\myjump
+\begin{tabular}{c|ccccccccccc}
+      17\%&  &  &  &  &  & -&  &  &  &  &  \\
+      14\%&  &  &  &  & -& -& -&  &  &  &  \\
+      11\%&  &  &  & -& -& -& -& -&  &  &  \\
+       8\%&  &  & -& -& -& -& -& -& -&  &  \\
+     5.5\%&  & -& -& -& -& -& -& -& -& -&  \\
+        \%& -& -& -& -& -& -& -& -& -& -& -\\
+        \%& 2& 3& 4& 5& 6& 7& 8& 9&10&11&12\\
+
+\end{tabular}
+\end{center}
+
+
+
+
+
+
+\end{document}
