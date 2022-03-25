@@ -87,15 +87,15 @@
     \scalebox{0.92}{\includegraphics{images/heart.png}} & PV max + 1 &
     \scalebox{0.05}{\includegraphics{images/chestplate.png}} & Defense max + 1\\
 
-    \scalebox{0.03}{\includegraphics{images/cible.png}} & Objectif de Combat (OC) - 3, une valeur différente pour les armes d'agilité et de force &
-    \scalebox{0.025}{\includegraphics{images/sword.png}} & Augmente le bonus de dégats des armes de force\\
+    \scalebox{0.03}{\includegraphics{images/cible.png}} & Objectif de Combat (OC) - 1 &
+    \scalebox{0.025}{\includegraphics{images/sword.png}} & Augmente le bonus de dégâts\\
 
 
     \scalebox{0.03}{\includegraphics{images/esquive.png}} & Esquive + 1, l'esquive augemente de 1 l'OC d'un ennemy vous attaquant&
-    \scalebox{0.05}{\includegraphics{images/deplacement.png}} & Déplacement + 1\\
+    \scalebox{0.015}{\includegraphics{images/chance.png}} & Chance + 1, un point de chance permet de relancer un dés. Le MJ décide quand est-ce que les points de chance se reset\\
 
-    \scalebox{0.025}{\includegraphics{images/porte.png}} & Porté + 2/dégats d'agilité + 1. Détermine la porté des armes à dstances et le bonus de dégats des armes d'agilité &
-    \scalebox{0.065}{\includegraphics{images/pouch.png}} & Augmente de 1 le nombre d'armes pouvant être portées et utilisés sans malus en combat\\
+
+    \vspace{0.3cm}\scalebox{0.065}{\includegraphics{images/pouch.png}} & \multicolumn{3}{@{}l}{Augmente de 1 le nombre d'armes pouvant être portées et utilisés sans malus en combat}\\
 
 \hline
     \textbf{PV} &Lorsque le personnage atteint 3 PV, il recoit une blessure grave décrite par le MJ et le besoin de s'alliter un certain nombre de jours (?) &
@@ -103,21 +103,23 @@
 \hline
 \end{tabularx}
 
-\noindent\textbf{Compétences}
-Il n'existe pas de compétences pré-définies, c'est au joueur d'imaginer les compétences que son personnage possède. Pour réaliser des actions hors combat, le joueur doit justifier au MJ pourquoi son personnage est capable de réaliser la tache envisagée. Cette justification peut utiliser comme argument l'une des compétences du personnage.\newline
+\myjump[0.35]
+\textbf{Compétences}\newline
+À part dans l'arbre de progression, il n'existe pas de compétences pré-définies, c'est au joueur d'imaginer les compétences que son personnage possède. Pour réaliser des actions hors combat, le joueur doit justifier au MJ pourquoi son personnage est capable de réaliser la tache envisagée. Cette justification peut utiliser comme argument l'une des compétences du personnage.\newline
 \begin{tabularx}{\linewidth}{|X}
-\emph{\og J'aimerais que mon personnage trouve du cerfeuille dans la forêt. Il devrait en être capable car il a été élève d'un druide et possède la compétence herboristerie 2. \fg}\\
+\emph{\og J'aimerais que mon personnage cherche du cerfeuille dans la forêt. Il devrait en être capable d'en trouver car il a été élève d'un druide et possède la compétence herboristerie 2. \fg}\\
 \end{tabularx}
 
 
 
 \myjump[0.35]
 \textbf{Création de personnage}\newline
-Distribuer 8 points d'expérience entre l'arbre d'agilité et de force. Distribuer 6 points de connaissances. Il n'est pas possible d'augmenter une connaissance à plus de 2. 4 de déplacement de base. 8 de porté de base.
+Distribuer 10 points d'expérience dans l'arbre de progrésion. 6 points de connaissances sont disponibles et peuvent être distribués plus tard dans la partie. 4 de défense max. Équipement de départ à discuter avec le MJ.
 
 \myjump[0]
 \textbf{Combat}\newline
-Lorsque votre personnage veut attaquer une créature, il n'y a qu'un seul jet de dés à faire pour connaître les dégats qu'il infligera. Vous utiliserez une arme de force ou d'agilité et il faudra utiliser l'Objectif de Combat (OC) et le bonus de dégâts qui viennent de l'arbre correspondant.
+En combat, votre personnage peut réaliser 2 actions diférentes.
+Lorsque votre personnage veut attaquer, il n'y a qu'un seul jet de dés à faire pour connaître les dégats qu'il infligera. Vous lancez 2d6 explosifs que vous comparez à votre Objectif de Combat (OC). Si le résultat est supérieur ou égal à  votre OC, vous additionez au jet de dés les dégats bonus de votre arbre et les dégats de votre arme.
 
 $$
 \mbox{Dégâts infligés} =
@@ -131,8 +133,8 @@ $$
 
 \noindent
 \begin{tabularx}{\linewidth}{|X}
-\emph{Biglour utilise sa dague d'agilité qui fait 4 de dégats. Il a débloqué 2 cibles dans son arbre d'agilité alors son Objectif de Combat (OC) vaut 10-2=8. Il a aussi atteint 2 arcs, il a donc 2 dégats bonus d'agilité.
-Il lance 2 dés 6 qui s'additionnent à 7, c'est inférieur à son OC, il inflige donc 7 de dégats. Au tours suivant il obtient 9 et inflige donc 9+2+4=15 de dégats}\\
+\emph{Biglour utilise sa dague qui fait 4 de dégats. Il a débloqué 2 cibles dans son arbre alors son Objectif de Combat (OC) vaut 12-2=10. Il a aussi atteint 2 épées et a donc 2 dégats bonus.
+Il lance 2 dés 6 et obtient un 3 et un 6, le dés qui a atteint 6 explose et Biglour lance un dés supplémentaire qui fait 4. $3 + 6 + 4 = 13 \ge 10$ c'est suppérieur à son OC, il inflige donc $13 + 2 + 4 = 19$ de dégats. Au tours suivant il obtient $3 + 4 = 7 < 10$ et inflige 7 dégats}\\
 \end{tabularx}
 
 
@@ -155,7 +157,6 @@ Il lance 2 dés 6 qui s'additionnent à 7, c'est inférieur à son OC, il inflig
 
 
 
-
 \myjump[0]
 \textbf{Compétences}\newline
 Le cadre de \emph{compétence} de la feuille de personnage recueille tous les domaines où le personnage possède une maitrise ou un savoir. Pour réaliser des actions hors combat, les joueurs vont justifier pourquoi leur personnage est capable de réaliser la tache envisagée. Vous devez juger leur argumentaire en prenant en compte les compétences du personnage, sa condition et l'histoire. Les domaines techniques sont très faciles à juger, quelqu'un qui ne s'est jamais entrainé au crochetage, ne peut pas crocheter. Pour les situations plus nuancés le MJ doit prendre en compte l'histoire et choisir le jugement qui va ajouter le plus de drame et de rebondissement à l'histoire.\newline\newline
@@ -171,13 +172,15 @@ En combat les dégats des forces opposant les joueurs sont calculés ainsi :
 
 \noindent
 \begin{tabular}{c|c}
-    1d6 > 3 + esquive de la cible & dégats haut \\
-    1d6 $\leq$ 3 + esquive de la cible & dégats bas \\
+    1d6 $\ge$ 2 + esquive de la cible & dégats haut \\
+    1d6 $<$ 2 + esquive de la cible & dégats bas \\
 \end{tabular}
 
 
 
 \myjump[0.4]\noindent
+Les armes de bases font entre 2 et 4 dégâts, à chaque fois qu'un joueur trouve une nouvelle arme, elle devrait faire 2 dégâts de plus.
+
 \begin{tabularx}{\textwidth}{cX|cX}
     \sc{\textbf{Armes}} & & \sc{\textbf{Créatures}} &\\
     Épée & 5 dégats & Goblin & 8-14 dégats; 10 pv\\
@@ -220,8 +223,43 @@ En combat les dégats des forces opposant les joueurs sont calculés ainsi :
 \end{center}
 
 
+TODO
+\begin{itemize}
+    \item ajouter au scenario le fait qu'ils ont plus d'argent à cause du prix d'entré du tournois
+    \item dessiner la carte du sous sol
+    \item designer la reine insectes (glyphe sur l'abdomen)
+    \item ouvriers, guerrier, bouclier(volant oneshot), kamikaze qui paralise
+    \item finir le module d'enchantement
+    \item ecrire description épée electrique (forte mais fait beaucoup de bruit)
+    \item comment créer un coup spécial
+
+    \item coup spécial : pas 2 fois sur le même groupe d'ennemi
+\end{itemize}
 
 
+\begin{itemize}
+    \item combien dé nnemi ca touche
+    \item est-ce-que stress +1
+    \item effet sur cible
+    \item
+    \item effet negatif sur utilisateur
+    \item
+    \item attaque
+    \item attaque dans le dos = +1d6
+    \item 2 cibles = degats complet et degats /2 1fois
+    \item 3 ou plus cibles = degats/2 1fois
+    \item
+    \item defense = +3 def pendant un tour 1fois
+    \item fuite = donne du déplacement 1fois
+    \item
+    \item stun 1 fois
+    \item charge = degats/2 1 fois
+    \item pousser 1 fois
+    \item augmenter oc cible
+    \item cracheur de feu = attaque normale
+    \item
+    \item provocation n'est pas un coup spécial
 
+\end{itemize}
 
 \end{document}
