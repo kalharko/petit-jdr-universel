@@ -1,0 +1,107 @@
+% !TEX TS-program = pdflatex
+% !TEX encoding = UTF-8 Unicode
+
+% Article template :)
+
+% General stuff
+\documentclass[11pt]{article} % use larger type; default would be 10pt
+
+\usepackage[utf8]{inputenc} % set input encoding (not needed with XeLaTeX)
+\usepackage[french]{babel} % Language setting
+\usepackage [T1] {fontenc}
+\pdfmapfile{Overpass.map}
+
+% Geometry
+\usepackage{geometry}
+\geometry{a4paper}
+\geometry{margin=2cm}
+
+% Usefull packages
+\usepackage{eso-pic} % to add background images to the article
+\usepackage{graphicx} % support the \includegraphics command and options
+%\usepackage[colorlinks=false]{hyperref}
+\usepackage{titlesec} % to change default styles of /sections, /title ...
+\usepackage{xcolor}
+\usepackage{tabto}
+%\usepackage{amssymb}
+\usepackage{amssymb}
+\usepackage{multirow}
+\usepackage{tikz}
+\usetikzlibrary{arrows,automata,positioning}
+\usepackage{amsmath}
+\usepackage{lettrine}
+\usepackage{oldgerm}
+\usepackage{yfonts}
+\usepackage{multicol}
+\usepackage{blindtext}
+\usepackage{svg}
+\usepackage{tabularx}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,
+    urlcolor=cyan,
+    pdftitle={Overleaf Example},
+    pdfpagemode=FullScreen,
+    }
+
+\newcommand{\enluminure}[2]{\lettrine[lines=3]{\small \initfamily #1}{#2}}
+
+
+% Style !
+\definecolor{10Black}{cmyk}{0, 0, 0, 0.10} % 10% of black
+\definecolor{20Black}{cmyk}{0, 0, 0, 0.20} % 20% of black
+\definecolor{80Black}{cmyk}{0, 0, 0, 0.80} % 80% of black
+\definecolor{95Black}{cmyk}{0, 0, 0, 0.95} % 60% of black
+%\color{10Black}
+%\pagecolor{black}
+
+% New commands
+\newcommand{\myjump}[1][1]{\mbox{}\\[#1cm]}
+
+
+\begin{document}
+\pagestyle{empty}
+
+\begin{center}
+    \textbf{Coups Spéciaux}
+
+    Règles additionnelles
+\end{center}
+
+
+\myjump
+TODO
+
+\begin{itemize}
+    \item comment créer un coup spécial
+    \item coup spécial : pas 2 fois sur le même groupe d'ennemi
+    \item
+    \item
+    \item combien dé nnemi ca touche
+    \item est-ce-que stress +1
+    \item effet sur cible
+    \item
+    \item effet negatif sur utilisateur
+    \item
+    \item attaque
+    \item attaque dans le dos = +1d6
+    \item 2 cibles = degats complet et degats /2 1fois
+    \item 3 ou plus cibles = degats/2 1fois
+    \item
+    \item defense = +3 def pendant un tour 1fois
+    \item fuite = donne du déplacement 1fois
+    \item
+    \item stun 1 fois
+    \item charge = degats/2 1 fois
+    \item pousser 1 fois
+    \item augmenter oc cible
+    \item cracheur de feu = attaque normale
+    \item
+    \item provocation n'est pas un coup spécial
+
+\end{itemize}
+
+
+\end{document}

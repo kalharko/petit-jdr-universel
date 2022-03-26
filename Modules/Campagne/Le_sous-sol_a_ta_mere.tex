@@ -1,0 +1,147 @@
+% !TEX TS-program = pdflatex
+% !TEX encoding = UTF-8 Unicode
+
+% Article template :)
+
+% General stuff
+\documentclass[11pt]{article} % use larger type; default would be 10pt
+
+\usepackage[utf8]{inputenc} % set input encoding (not needed with XeLaTeX)
+\usepackage[french]{babel} % Language setting
+\usepackage [T1] {fontenc}
+\pdfmapfile{Overpass.map}
+
+% Geometry
+\usepackage{geometry}
+\geometry{a4paper}
+\geometry{margin=2cm}
+
+% Usefull packages
+\usepackage{eso-pic} % to add background images to the article
+\usepackage{graphicx} % support the \includegraphics command and options
+%\usepackage[colorlinks=false]{hyperref}
+\usepackage{titlesec} % to change default styles of /sections, /title ...
+\usepackage{xcolor}
+\usepackage{tabto}
+%\usepackage{amssymb}
+\usepackage{amssymb}
+\usepackage{multirow}
+\usepackage{tikz}
+\usetikzlibrary{arrows,automata,positioning}
+\usepackage{amsmath}
+\usepackage{lettrine}
+\usepackage{oldgerm}
+\usepackage{yfonts}
+\usepackage{multicol}
+\usepackage{blindtext}
+\usepackage{svg}
+\usepackage{tabularx}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,
+    urlcolor=cyan,
+    pdftitle={Overleaf Example},
+    pdfpagemode=FullScreen,
+    }
+
+\newcommand{\enluminure}[2]{\lettrine[lines=3]{\small \initfamily #1}{#2}}
+
+
+% Style !
+\definecolor{10Black}{cmyk}{0, 0, 0, 0.10} % 10% of black
+\definecolor{20Black}{cmyk}{0, 0, 0, 0.20} % 20% of black
+\definecolor{80Black}{cmyk}{0, 0, 0, 0.80} % 80% of black
+\definecolor{95Black}{cmyk}{0, 0, 0, 0.95} % 60% of black
+%\color{10Black}
+%\pagecolor{black}
+
+% New commands
+\newcommand{\myjump}[1][1]{\mbox{}\\[#1cm]}
+
+
+\begin{document}
+\pagestyle{empty}
+
+\begin{center}
+    \textbf{Le sous-sol à ta mère}
+
+    Accroche de campagne
+\end{center}
+
+\enluminure{D}{ans} le bourg de Poznań, tous les ans se tient le grand tournois académique de la garde royale. Organisé pour filtrer les meilleurs combatants de la région des aventuriers de bas niveau, les 3 meilleurs combattants se voient offert une place dans la garde royale. Les dernier tours du tournois réunissent une foule de de toute origine et les participants qui passent les sélections rencontre gloire, offres d'emplois divers et même une audience devant le roi.\newline\newline
+
+
+\noindent \textbf{\emph{Directement aux joueurs}}\newline
+Cependant vous n'avez jamais passé les qualifications, vous avez même fait connaissances au bar du \textsc{Tonneau de bronze}, là où se réunissent la plus part des aventuriers qui ont échoué les qualifications au tournois. Cette année encore, tous les qualifiés étaient des fils de nobles, qui ont eu toutes les ressources du monde pour s'entrainer à l'épée. Alors que vous avez grandis en chassant des rats des caves ou en arrachant des patates de la terre... C'est sur que ce n'est pas très égale. Finalement, l'un de vous dit à haute voie ce que tout le monde espérait entendre :\newline
+\og Il faut arrêter de considérer ce tournois comme une épreuve sacrée, tous ces cons ont un avantage injuste, je dit qu'on ne pourras pas y arriver si on ne se serre pas les coudes. Je vous donne rendez vous demain, dans le sous-sol de chez ma mère, on pourras commencer à planifier notre entraînement ! \fg\newline\newline
+
+
+\noindent \textbf{\emph{Objectif de la campagne}}\newline
+Les PJ disposent de un an pour se préparer au prochain tournois académique de la garde royale. Pour cela, leur objectif sera de réunir des équipements, des connaissances de combat, de quoi enchanter leurs armes. En plus de cela, ils devront payer 300 PO de loyer pour pouvoir maintenir leur base d'opération dans le sous-sol de la mère d'un des PJ. Toute la campagne devrait se faire en suivant un alignement neutre ou bon, les personnages son en colère contre le système mais pas fondamentalement mauvais. De plus, si ils deviennent des criminels connus, ils ne seront pas autorisés à participer au tournois. Finalement, du côté du MJ, l'objectif principale est de mener les PJ jusqu'au niveau maximum du système de jeu.\newline\newline
+
+
+\noindent \textbf{\emph{Première réunion}}\newline
+Les PJ font connaissances dans leur nouvelle base d'opération, au bout d'un moment, la mère propriétaire du sous-sol viens leur donner toutes les offres de quêtes qu'elle a trouvé pour eux dans la ville (Donner l'annexe à cette campagne aux PJ). Elle est en fait inquiète de toucher son loyer, et elle le leur fait savoir. Si cette équipe de bras cassé est 5 fois plus éfficace que son fils, cela ne reste pas très efficace.\newline\newline
+
+
+\noindent \textbf{\emph{Les missions}}\newline
+Le MJ doit créer des quêtes et des donjons généreux en loot et en expérience. Si vous savez combien de séances vous voulez faire jouer, calculez combien d'XP il faut donner à chaque fois pour qu'ils atteignent le niveau max avant la dernière séance.\newline\newline
+
+
+\noindent \textbf{\emph{Le grand final}}\newline
+Une fois que les PJ ont atteint le niveau maxium, et si ils ne se sont pas rendu compte que être aventurier est plus lucratif que de gagner le tournois académique de la garde royale, les faire entrer dans le tournois. Vous pouvez utiliser le module "Organiser un tournois"
+
+
+
+
+
+\newpage
+\begin{tabularx}{\linewidth}{X}
+\hline
+
+    \textbf{Contenue des missions \textsc{pour le mj}}\\\hline
+    \textbf{Le dernier Caribou de Rogalin:}\newline
+    Possible introduction au module de règles optionelles "potions"\\\\\hline
+    \textbf{Le lac hanté de Mosina :}\newline
+    Récompense : colier de protection spectrale\\\\
+
+\hline
+\end{tabularx}
+
+
+
+
+
+
+\newpage
+\begin{center}
+    \textbf{Le sous-sol à ta mère}
+
+    Annexe pour les joueurs
+\end{center}
+
+
+\begin{tabularx}{\linewidth}{X}
+\hline
+
+    \textbf{Missions}
+    \\\hline\\
+    \textbf{Le dernier Caribou de Rogalin:}\newline
+    Je crois bien que les chasseurs de Rogalin ont tué tous les caribou de la région. Enfin presque, je crois qu'un jeune mâle se cache dans le bosquet des fées. Apportez lui mon amulette et je vous récompenserais en vous offrant des potions, celles que vous voulez. Rendez moi visite à l'herboristerie.
+    \\\\\hline\\
+    \textbf{Le lac hanté de Mosina :}\newline
+    Je vous met au défis de naviguer sur le lac de nuit. Personne ne pèche plus la raie des fonds depuis bien longtemps. C'est pour sûre parce que les  eaux sont hantées ! Si vous pouvez prouvez que vous nous avez débarassé des fantomes, le mair vous récompensera.\\\\\hline\\
+    \textbf{La maman gourmande de Stęszew :}\newline
+    Les jours de nuit sans lune, le haut de la coline de Stęszew s'ouvre en deux, et un cris effroyable s'en échappe. Mon mari croyais pouvoir libérer un esprit en peine en s'engoufrant dans la coline, mais elle s'est refermé sur lui au petit matin. Délivrez mon mari, et je vous donerais tout ce que j'ai, je vous en supplie.\\\\
+
+
+\hline
+\end{tabularx}
+
+
+
+
+
+\end{document}
