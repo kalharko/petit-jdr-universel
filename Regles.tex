@@ -114,11 +114,11 @@
 
 \myjump[0.35]
 \textbf{Création de personnage}\newline
-Distribuer 10 points d'expérience dans l'arbre de progrésion. 6 points de connaissances sont disponibles et peuvent être distribués plus tard dans la partie. 4 de défense max. Équipement de départ à discuter avec le MJ.
+Esquive et chance sont à 0, défense max à 4. Distribuer 10 points d'expérience dans l'arbre de progrésion. 6 points de connaissances sont disponibles et peuvent être distribués plus tard dans la partie. Choisir armes de départ qui font 4 de dégâts (3 si arme distance) et de l'armure qui s'additione à votre défense max-2. Le MJ à le dernier mot vis à vis de votre équipement
 
 \myjump[0]
 \textbf{Combat}\newline
-En combat, votre personnage peut réaliser 2 actions diférentes.
+En combat, votre personnage peut réaliser 2 actions dont une qui inflige des dégâts.
 Lorsque votre personnage veut attaquer, il n'y a qu'un seul jet de dés à faire pour connaître les dégats qu'il infligera. Vous lancez 2d6 explosifs que vous comparez à votre Objectif de Combat (OC). Si le résultat est supérieur ou égal à  votre OC, vous additionez au jet de dés les dégats bonus de votre arbre et les dégats de votre arme.
 
 $$
@@ -166,100 +166,45 @@ Le cadre de \emph{compétence} de la feuille de personnage recueille tous les do
 \myjump[0.35]
 Pour entrainer des compétences, les joueurs doivent trouver un personnage dans le jeu pour les aider à apprendre et investir du temps dans leur entrainement.
 
+
+\myjump[0]
+\textbf{Équipement}\newline
+Les armes à distance se jouent comme les autres armes, mais elles infligent légèrement moins de dégâts. Les boucliers ont une statistique de dégâts et de défense. Cette défense ne compte pas dans le calcul de la défense total. Un joueur qui utilise un bouclier doit avoir tapé avec au tour précédent pour profiter de sa statistique de défense.
+
+
 \myjump[0]
 \textbf{Combat}\newline
 En combat les dégats des forces opposant les joueurs sont calculés ainsi :
 
-\noindent
-\begin{tabular}{c|c}
-    1d6 $\ge$ 2 + esquive de la cible & dégats haut \\
-    1d6 $<$ 2 + esquive de la cible & dégats bas \\
-\end{tabular}
+$$
+\mbox{Dégâts ennemi} =
+\left\{
+    \begin{array}{ll}
+        (1d6 \ge 2) => \mbox{degâts haut}\\
+        (1d6 < 2) => \mbox{dégâts bas}
+    \end{array}
+\right.
+$$
 
 
-
-\myjump[0.4]\noindent
-Les armes de bases font entre 2 et 4 dégâts, à chaque fois qu'un joueur trouve une nouvelle arme, elle devrait faire 2 dégâts de plus.
-
-\begin{tabularx}{\textwidth}{cX|cX}
-    \sc{\textbf{Armes}} & & \sc{\textbf{Créatures}} &\\
-    Épée & 5 dégats & Goblin & 8-14 dégats; 10 pv\\
-    Marteau & 6 dégats & Troll & testest\\
-    Arc & 4 dégats & Griphon & testest\\
-    Flèche & 3 dégats & Slime & testes\\
-
-
+\myjump[0]\noindent
+Pour préparer vos combats, vous pouvez remplir ce genre de tableau :\newline
+\begin{tabularx}{\linewidth}{c|X}
+\hline
+    \textsc{\textbf{Nom/Titre}} & \emph{Guerrier Insecte}\\\hline
+    \multicolumn{2}{@{}l}{
+    \begin{tabularx}{\linewidth}{cXcXcX}
+        \textsc{\textbf{Degats bas}} & \emph{8} & \textsc{\textbf{Degats haut}} & \emph{12} & \textsc{\textbf{PV}} & \emph{20}\\\hline
+    \end{tabularx}
+    }\\
+    Description et & \emph{Un insecte à taille humaine, qui défends sa reine à tout prix.}\\
+    Coups spéciaux & \emph{Une fois par combat, utilise ses mandibules pour faire pour faire une attaque à 14 de dégâts haut.}\\
+\hline
 \end{tabularx}
 
+\myjump[0.35]
+Comme règle générale (à ne pas suivre à la lettre). Les dégâts haut de l'ennemi le plus fort sont entre 4 et 6 points plus élevé que la défense max de votre groupe; et ses dégâts bas est 1 points plus élevé que la défense max de votre groupe; finalement il doit être presque one-shot-able.
 
 
-
-
-\newpage
-\begin{center}
-\textbf{Distribution 2d6}
-\myjump
-\begin{tabular}{c|c|c|c|c|c|c|}
-     & 1& 2& 3& 4& 5& 6\\\cline{2-7}
-    1& 2& 3& 4& 5& 6& 7\\\cline{2-7}
-    2& 3& 4& 5& 6& 7& 8\\\cline{2-7}
-    3& 4& 5& 6& 7& 8& 9\\\cline{2-7}
-    4& 5& 6& 7& 8& 9&10\\\cline{2-7}
-    5& 6& 7& 8& 9&10&11\\\cline{2-7}
-    6& 7& 8& 9&10&11&12\\\cline{2-7}
-\end{tabular}
-
-\myjump
-\begin{tabular}{c|ccccccccccc}
-      17\%&  &  &  &  &  & -&  &  &  &  &  \\
-      14\%&  &  &  &  & -& -& -&  &  &  &  \\
-      11\%&  &  &  & -& -& -& -& -&  &  &  \\
-       8\%&  &  & -& -& -& -& -& -& -&  &  \\
-     5.5\%&  & -& -& -& -& -& -& -& -& -&  \\
-        \%& -& -& -& -& -& -& -& -& -& -& -\\
-        \%& 2& 3& 4& 5& 6& 7& 8& 9&10&11&12\\
-
-\end{tabular}
-\end{center}
-
-
-TODO
-\begin{itemize}
-    \item ajouter au scenario le fait qu'ils ont plus d'argent à cause du prix d'entré du tournois
-    \item dessiner la carte du sous sol
-    \item designer la reine insectes (glyphe sur l'abdomen)
-    \item ouvriers, guerrier, bouclier(volant oneshot), kamikaze qui paralise
-    \item finir le module d'enchantement
-    \item ecrire description épée electrique (forte mais fait beaucoup de bruit)
-    \item comment créer un coup spécial
-
-    \item coup spécial : pas 2 fois sur le même groupe d'ennemi
-\end{itemize}
-
-
-\begin{itemize}
-    \item combien dé nnemi ca touche
-    \item est-ce-que stress +1
-    \item effet sur cible
-    \item
-    \item effet negatif sur utilisateur
-    \item
-    \item attaque
-    \item attaque dans le dos = +1d6
-    \item 2 cibles = degats complet et degats /2 1fois
-    \item 3 ou plus cibles = degats/2 1fois
-    \item
-    \item defense = +3 def pendant un tour 1fois
-    \item fuite = donne du déplacement 1fois
-    \item
-    \item stun 1 fois
-    \item charge = degats/2 1 fois
-    \item pousser 1 fois
-    \item augmenter oc cible
-    \item cracheur de feu = attaque normale
-    \item
-    \item provocation n'est pas un coup spécial
-
-\end{itemize}
 
 \end{document}
