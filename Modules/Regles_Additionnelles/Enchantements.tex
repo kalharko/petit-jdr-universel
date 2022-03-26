@@ -47,7 +47,7 @@
     }
 
 \newcommand{\enluminure}[2]{\lettrine[lines=3]{\small \initfamily #1}{#2}}
-
+\newcommand{\scbf}[1]{\textsc{\textbf{#1}}}
 
 % Style !
 \definecolor{10Black}{cmyk}{0, 0, 0, 0.10} % 10% of black
@@ -79,7 +79,7 @@
 La première étape pour créer un enchantement est de créer sa description et déterminer son coût. Parcourir les tableaux suivants pour trouver le coût finale du sort.\newline
 
 
-Description de l'enchantement avant de lire le tableau : charges max 1, durée 1 tour de combat
+Description de l'enchantement avant de lire le tableau : charges max 1, durée 1 tour de combat, porté contacte
 
 \noindent
 \begin{tabularx}{\linewidth}{|Xc|}
@@ -88,7 +88,9 @@ Description de l'enchantement avant de lire le tableau : charges max 1, durée 1
     \textbf{Effet} & \textbf{Coût}\\
     \hline
     \textbf{Généralitées} &\\
+    Coût arbitraire du MJ & +x\\
     Charges max + 1 & +1\\
+    Objet fragile qui doit être rendu incassable & +1\\
     \hline
     \textbf{Durée} &\\
     Tour de combat +1 & +1\\
@@ -96,8 +98,8 @@ Description de l'enchantement avant de lire le tableau : charges max 1, durée 1
     Effet passif & +4\\
     \hline
     \textbf{Cibles} &\\
-    Contacte & +1\\
     Portée + 10m & +1\\
+    Portée à vue & +4\\
     Diamètre zone +1 & +2\\
     Nombre cibles max dans zone +1 & +1\\
     \hline
@@ -112,6 +114,9 @@ Description de l'enchantement avant de lire le tableau : charges max 1, durée 1
     Ne foncionne que dans un biome spécifique & -1\\
     Ne peut pas toucher le boss & -1\\
     La cible peut esquiver le sort & -2\\
+    Augmente le stress de l'utilisateur & -1\\
+    Augmente le stress de tout le monde & -1\\
+    Utilisable unique dans une range de PV & -1\\
 
 
 \hline
@@ -146,12 +151,16 @@ Pour appliquer un enchantement à un objet, il faut prendre du temps d'étude, r
 
     \textbf{Coût} & \textbf{Forme du rituel}\\
     \hline
-    x & Dans un lieu calme avec 3 ingrédients communs\\
-    x & + 1d6 jours d'études dans une bibliothèque, 1 ingrédient rare\\
-    x & + \\
+    1    & Dans un lieu calme avec 3 ingrédients communs\\
+    3 & + 1d6 jours d'études dans une bibliothèque\\
+    5 & + 1 ingrédient rare\\
     x & + 1d6 jours d'études dans une bibliothèque\\
-    x & + 1 ingrédient sanglant\\
-
+    x & + coûte un point de connaissance\\
+    14 & + 1 ingrédient sanglant\\
+    x & + doit sacrifier un artefacte magique\\
+    X & + doit se nourrir de la peine d'un être cher\\
+    X & + doit se nourrir de la peine d'un village\\
+    X & + doit se nourrir de la peine d'un pays\\
 
 \hline
 \end{tabularx}
@@ -172,6 +181,19 @@ Tableau ingrédients sanglants\newline
     \item illusion pleins d'amis = 3pts
     \item
 \end{itemize}
+
+
+\begin{tabularx}{\linewidth}{|c|X|}
+\hline
+    \scbf{No} & \scbf{Description}\\
+    \hline
+    1 & Perd un 1d3 dés de points de compétences\\
+    2 & Limite basse de stress est augmenté de 1\\
+    3 & Sacrifier un membre\\
+    4 & Amnésie (discrétion du MJ)\\
+    5 & Perd 1d6 de PV max\\
+    6 & Ignore stress 1\\\hline
+\end{tabularx}
 
 
 \end{document}
