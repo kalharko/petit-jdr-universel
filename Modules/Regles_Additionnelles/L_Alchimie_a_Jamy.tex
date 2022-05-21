@@ -53,9 +53,9 @@
 \newcommand{\scbf}[1]{\textsc{\textbf{#1}}}
 
 \newcounter{NoCounter}
-\newcommand{\myline}[3]{
+\newcommand{\myline}[1]{
     \stepcounter{NoCounter}
-    \arabic{NoCounter} & #1 & #2 & #3\\
+    \arabic{NoCounter} & #1 \\
 }
 
 
@@ -86,34 +86,103 @@
 \myjump
 Lorsqu'un personnage alchimiste rencontre un nouvel ingrédient ou élément, il peut le tester sur lui-même ou un coéquipié pour en déterminer son effet. Lancer 1d20 dans la table suivante :\newline
 
-\myjump[0]
-\begin{tabularx}{\linewidth}{|c|c|c|X|}
-\hline
-    \setcounter{NoCounter}{0}
-    \scbf{No} & \scbf{Effet} & \scbf{Niveau X} & \scbf{Description}\\\hline
+\myjump[0]\noindent
+\begin{tabularx}{\linewidth}{XX}
+    {\begin{tabularx}{\linewidth}{cX}
+        \setcounter{NoCounter}{0}\noindent
+        \myline{Vous devenez une petite grenouille télépathique}
+        \myline{Vous devenez un murlock}
+        \myline{Vous vous changez en forme gazeuse}
+        \myline{Vous devenez mort-vivant}
+        \myline{Votre peau devient roche}
+        \myline{Un bras supplémentaire pousse sur votre corps}
+        \myline{L’un de vos bras devient flacide et inutilisable}
+        \myline{Vous ouvrez votre troisième oeil}
+        \myline{Vous rétrécissez jusqu’à ¼ de votre taille, gagnez 2 esquive}
+        \myline{Des champignons vous poussent sur la tête}
+        \myline{Vous vous changez en forme spectrale pendant x tours}
+        \myline{Vos doigts se transforment en pates arachnéides}
+        \myline{Vous suez de l’alchool à brûler}
+        \myline{De puissantes mandibules vous poussent sur le visage}
+        \myline{Vous devenez transparent comme un fantome}
+        \myline{Vous prenez une forme élémentaire}
+        \myline{Vous grandissez jusqu’à 1,5 fois votre taille et perdez 1 d’estquive}
+        \myline{Des cornes de chèvers vos poussent sur la tête}
 
-    \myline{Paralysie}{1d6}{Paralyse pendant X tours de combat}
 
-    \myline{Ignore armure}{1d6}{Inflige X dǵats ignore armure}
+    \end{tabularx}} &
+    {\begin{tabularx}{\linewidth}{cX}
+        \setcounter{NoCounter}{0}\noindent
+        \myline{Vous emetez de la lumière}
+        \myline{Vous ne pouvez parler que en mensonges}
+        \myline{Vous oubliez comment lire pendant une semaine}
+        \myline{Vous ne pouvez parler que en rhymes}
+        \myline{Une vision d’un dieu ancien vous frappe d’une grande paranoia}
+        \myline{Vous ne pouvez pas mentir}
+        \myline{Vous pouvez poser une question oui/non à une divinité aléatoire}
+        \myline{Vos pensées sont audibles}
+        \myline{Vous êtes immédiatement torché, une geulle de bois légendaire vous attends}
+        \myline{Vous devenez muet}
+        \myline{Vous pouvez entendre les pensées des gens autours de vous}
+        \myline{La fatigue vous prends, vous voulez vous assoire et ne plus bouger}
+        \myline{Nyctalopie}
+        \myline{Vous rajeunissez de quelques années, effet négatif si abusé}
+        \myline{Vous oubliez les dernières 24h}
+        \myline{Votre peau prends une légère teinte verte, vous pouvez vous nourir de la photosynthès}
+        \myline{Vous devenez accros à cette nouvelle substance, durant votre temps libre, vous deverez essayer de vous en procurer. Seul un autre joueur peut vous aider à vous seuvrer}
+        \myline{Il vous semble avoir consomé un repas complet}
+        \myline{Vos veines s’impriment sur votre peu comme des tatouahes}
 
-    \myline{Soin}{2d6}{Soigne de X}
-
-    \myline{Ursidé}{1d6}{Transforme en ours}
-
-\hline
+    \end{tabularx}}
 \end{tabularx}
 
 
 
-\myjump[0.35]
-\begin{tabularx}{\linewidth}{|c|c|c|X|}
-\hline
-    \setcounter{NoCounter}{0}
-    \scbf{No} & \scbf{Effet} & \scbf{Niveau X} & \scbf{Description}\\\hline
 
-    \myline{Paralysie}{1d6}{Paralyse pendant X tours de combat}
 
-\hline
+
+
+
+
+
+\newpage
+\begin{tabularx}{\linewidth}{XX}
+    {\begin{tabularx}{\linewidth}{cX}
+        \setcounter{NoCounter}{0}\noindent
+        \myline{Respiration sous-marine}
+        \myline{Une vague vision du future vous frappe}
+        \myline{Resistance aux températures extrèmes}
+        \myline{Lévitation}
+        \myline{Régénération}
+        \myline{Plus besoin de dormir pendant une semaine}
+        \myline{Soigne toute maladie}
+        \myline{Votre peau est recouverte d’épines, quand vous recevez une attaque, vous infligez des dégâts magiques}
+        \myline{Résistance aux dégâts magiques pour x tours}
+        \myline{Résistance aux dégâts élémentaires pour x tours}
+        \myline{Vous vous sentez très fort, dégâts bonus +x}
+        \myline{Les personnes qui partagent cette potion peuvent communiquer par télépathie}
+        \myline{Vos armes magiques ne dépensent plus de charges magiques pendant x tours}
+        \myline{Vous devenez invisible pour x tours}
+        \myline{Overheal de x}
+        \myline{Plus x dégâts bonus pendant un combât}
+        \myline{Heal x}
+        \myline{Inflige x dégâts passe armure}
+        \myline{Régénère x PV par tour pendant un combât}
+        \myline{Augmente votre défense totale de x}
+        \myline{Votre prochain jet utilise 3 dés au lieu de 2}
+        \myline{Engrais incroyable}
+        \myline{alcohol à bruler}
+        \myline{immunité aux poisons}
+        \myline{Vos cheveux prennent la couleur de la potion}
+        \myline{Vous veillissez de quelques années}
+        \myline{Vos pupilles prennent la couleur de la potion}
+        \myline{Votre peu prends la couleur de la potion}
+
+    \end{tabularx}} &
+    {\begin{tabularx}{\linewidth}{cX}
+        \setcounter{NoCounter}{0}\noindent
+
+    \end{tabularx}}
 \end{tabularx}
 
 

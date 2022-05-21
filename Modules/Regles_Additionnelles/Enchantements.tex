@@ -14,7 +14,7 @@
 % Geometry
 \usepackage{geometry}
 \geometry{a4paper}
-\geometry{margin=2cm}
+\geometry{margin=1.5cm}
 
 % Usefull packages
 \usepackage{eso-pic} % to add background images to the article
@@ -70,27 +70,31 @@
     Module de règles optionelles
 \end{center}
 
-\enluminure{C}{e} module permet la créations d'enchantements à partir d'une description donnée par un joueur ou le MJ. De plus de créer des armes intéressantes, réunir les ingrédients et les conditions nécessaire au rituel peut être un appel à l'aventure. Finalement, les armes que les joueurs enchanterons seront beaucoup plus personnelles et auront une histoire.
+
+
+\enluminure{E}{nchanter} un équipement permet à un joueur d'améliorer les capacités de son personnage grâce à sa créativité. Une fois que le MJ a écouté la description du sort d'un joueur, il doit faire un travail d'interprétation pour en déterminer son coût et ses effets de gameplay.
+
 
 
 
 \myjump[0]
 \textbf{\huge Description et coûts}\newline
-La première étape pour créer un enchantement est de créer sa description et déterminer son coût. Parcourir les tableaux suivants pour trouver le coût finale du sort.\newline
+La première étape pour créer un enchantement est d'écrire ou demander au joueur sa description puis déterminer son coût. Avant de parcourir les tableaux suivant pour déterminer le coût, le sort commence avec les caractéristiques suivantes:
+Charges max 1, durée 1 tour de combat, porté contacte
 
-
-Description de l'enchantement avant de lire le tableau : charges max 1, durée 1 tour de combat, porté contacte
-
-\noindent
+\myjump[0]
 \begin{tabularx}{\linewidth}{|Xc|}
 \hline
 
     \textbf{Effet} & \textbf{Coût}\\
     \hline
     \textbf{Généralitées} &\\
+    x effets différents & +x\\
     Coût arbitraire du MJ & +x\\
     Charges max + 1 & +1\\
+    Manipule une statistique de la feuille de perso & +1\\
     Objet fragile qui doit être rendu incassable & +1\\
+    Inflige des dégâts magiques & +1\\
     \hline
     \textbf{Durée} &\\
     Tour de combat +1 & +1\\
@@ -118,18 +122,20 @@ Description de l'enchantement avant de lire le tableau : charges max 1, durée 1
     Augmente le stress de tout le monde & -1\\
     Utilisable unique dans une range de PV & -1\\
 
-
 \hline
 \end{tabularx}
 
-\myjump[0.35]\noindent
+
+
+
+\myjump[0.35]
 \begin{tabularx}{\linewidth}{|Xc|}
 \hline
 
     \textbf{Puissance} & \textbf{Multiplicateur}\\
     \hline
     Pas d'impacte directe sur le gameplay & x0.5 arrondie à l'inférieur\\
-    & consome une charge parjour\\
+    & consome une charge par jour\\
     Illusion & x0.5 arrondie au supérieur\\
     Effets reproductibles avec le bon equipement & x1\\
     Effets non reproductibles sans magie mais impacte modéré & x1.5 arrondie au supérieur\\
@@ -141,22 +147,22 @@ Description de l'enchantement avant de lire le tableau : charges max 1, durée 1
 \hline
 \end{tabularx}
 
-
 \newpage
 \textbf{\huge Définition du rituel}\newline
-Pour appliquer un enchantement à un objet, il faut prendre du temps d'étude, réunir des ingrédients et trouver le lieu parfait
+Déterminer le coût d'un enchantement donne une estimation de sa puissance et permet de définir quels sont les efforts et coûts à payer pour pouvoir réaliser le rituel.
 
-\begin{tabularx}{\linewidth}{|cX|}
+\myjump[0]
+\textbf{Tableau de définition du rituel}\newline
+\begin{tabularx}{\linewidth}{|c|X|}
 \hline
-
     \textbf{Coût} & \textbf{Forme du rituel}\\
     \hline
     1    & Dans un lieu calme avec 3 ingrédients communs\\
     3 & + 1d6 jours d'études dans une bibliothèque\\
     5 & + 1 ingrédient rare\\
     x & + 1d6 jours d'études dans une bibliothèque\\
-    x & + coûte un point de connaissance\\
-    14 & + 1 ingrédient sanglant\\
+    x & + sacrifice\\
+    15 & + 1 ingrédient sanglant\\
     x & + doit sacrifier un artefacte magique\\
     X & + doit se nourrir de la peine d'un être cher\\
     X & + doit se nourrir de la peine d'un village\\
@@ -166,34 +172,33 @@ Pour appliquer un enchantement à un objet, il faut prendre du temps d'étude, r
 \end{tabularx}
 
 
-\myjump
-Tableau ingrédients communs + prix\newline
-Tableau ingrédients rares + prix  \newline
-Tableau ingrédients sanglants\newline
+\myjump[0.35]
+\textbf{Ingrédient commun} \tabto{4.3cm}Facilement récoltable avec les bonnes connaissances. Ne coûte pas trop cher.\newline
+\textbf{Ingrédient rare} \tabto{4.3cm}Difficilement récoltable, coûte suffisament cher pour rendre vos joueurs pauvres.\newline
+\textbf{Ingrédient sanglant} \tabto{4.3cm}L'enchantement doit être forgé dans le coeur encore fumant d'un monstre.\newline
+\textbf{Sacrifice} \tabto{4.3cm}Lancer 1d6 dans le tableau des sacrifices.\newline
+\textbf{Nourir d'une peine} \tabto{4.3cm}Pour les sorts plus maléfiques, requiert de créer de la souffrance. Empoisonner le puit d'un village pour récolter sa peine par exemple.
 
 
 
-
-\begin{itemize}
-    \item vision x ray 1 tour = 8pts
-    \item imortalité = 25 pts
-    \item levée de mort vivants =
-    \item illusion pleins d'amis = 3pts
-    \item
-\end{itemize}
-
-
+\myjump[0]
+\textbf{Tableau des Sacrifices}\newline\noindent
 \begin{tabularx}{\linewidth}{|c|X|}
 \hline
     \scbf{No} & \scbf{Description}\\
     \hline
-    1 & Perd un 1d3 dés de points de compétences\\
+    1 & Perd des points de compétences\\
     2 & Limite basse de stress est augmenté de 1\\
     3 & Sacrifier un membre\\
     4 & Amnésie (discrétion du MJ)\\
-    5 & Perd 1d6 de PV max\\
+    5 & Perd des de PV max\\
     6 & Ignore stress 1\\\hline
 \end{tabularx}
+
+
+\myjump[0.35]
+\textbf{\huge Équilibrage}\newline
+Il peut arriver que en tant que MJ vous n'aimez pas l'enchantement qu'un de vos joueurs veut créer, mais que vous ne voulez pas brimer sa créativité. Dans ce cas, vous pouvez lui proposer d'ajouter des limitations à son sort.
 
 
 \end{document}

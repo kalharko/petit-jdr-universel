@@ -46,7 +46,6 @@
     pdfpagemode=FullScreen,
     }
 
-\newcommand{\enluminure}[2]{\lettrine[lines=3]{\small \initfamily #1}{#2}}
 
 
 % Style !
@@ -59,7 +58,8 @@
 
 % New commands
 \newcommand{\myjump}[1][1]{\mbox{}\\[#1cm]}
-
+\newcommand{\scbf}[1]{\textsc{\textbf{#1}}}
+\newcommand{\enluminure}[2]{\lettrine[lines=3]{\small \initfamily #1}{#2}}
 
 \begin{document}
 \pagestyle{empty}
@@ -70,15 +70,13 @@
     Règles de base
 \end{center}
 
-\enluminure{P}{eut} importe la quantité de règles qu'un jdr offre, on attendras toujours du MJ qu'il juge les situations non régulés, qu'il improvise et applique la règle du cool. Le petit JDR universel propose peu de règles, il se repose sur les accords qui existes entre joueurs et MJ.
+\enluminure{P}{eut} importe la quantité de règles qu'un jdr offre, on attendras toujours du MJ qu'il juge les situations non régulées, qu'il improvise et applique la règle du cool. Le petit JDR universel propose peu de règles, il se repose sur les accords qui existent entre joueurs et MJ.
 
 
 \myjump[0]
 \textbf{\huge Joueurs}
 
-
-\myjump[0]
-\textbf{Feuille de personnages}
+\scbf{Arbre de progression}
 
 
 \noindent
@@ -87,7 +85,7 @@
     \scalebox{0.92}{\includegraphics{images/heart.png}} & PV max + 1 &
     \scalebox{0.05}{\includegraphics{images/chestplate.png}} & Defense max + 1\\
 
-    \scalebox{0.03}{\includegraphics{images/cible.png}} & Objectif de Combat (OC) - 1 &
+    \scalebox{0.03}{\includegraphics{images/cible.png}} & Objectif de Combat (OC) + 1 &
     \scalebox{0.025}{\includegraphics{images/sword.png}} & Augmente le bonus de dégâts\\
 
 
@@ -95,47 +93,47 @@
     \scalebox{0.015}{\includegraphics{images/chance.png}} & Chance + 1, un point de chance permet de relancer un dés. Le MJ décide quand est-ce que les points de chance se reset\\
 
 
-    \vspace{0.3cm}\scalebox{0.065}{\includegraphics{images/pouch.png}} & \multicolumn{3}{@{}l}{Augmente de 1 le nombre d'armes pouvant être portées et utilisés sans malus en combat}\\
+    \vspace{0.3cm}\scalebox{0.065}{\includegraphics{images/pouch.png}} & \multicolumn{3}{@{}l}{Augmente de 1 le nombre d'armes et objets pouvant être utilisés sans malus en combat}\\
 
 \hline
-    \textbf{PV} &Lorsque le personnage atteint 3 PV, il recoit une blessure grave décrite par le MJ et le besoin de s'alliter un certain nombre de jours (?) &
-    \textbf{Stress} & Par défaut à 0/6, augmenté par le MJ. Stress au delas du niveau 6 est à la discrétion du MJ\\
+    \textbf{PV} &Lorsque le personnage atteint 0 PV, il doit recevoir un coup supplémentaire avant de mourrir &
+    \textbf{Stress} & Par défaut à 0/6, augmente au fur et à mesure de la partie. C'est le MJ qui remet le stress à 0\\
 \hline
 \end{tabularx}
 
-\myjump[0.35]
-\textbf{Compétences}\newline
-À part dans l'arbre de progression, il n'existe pas de compétences pré-définies, c'est au joueur d'imaginer les compétences que son personnage possède. Pour réaliser des actions hors combat, le joueur doit justifier au MJ pourquoi son personnage est capable de réaliser la tache envisagée. Cette justification peut utiliser comme argument l'une des compétences du personnage.\newline
+\myjump[0.3]
+\indent\scbf{Compétences}\newline
+À part dans l'arbre de progression, il n'existe pas de compétences pré-définies, c'est au joueur d'imaginer les compétences que son personnage possède. Pour réaliser des actions hors combat, le joueur doit justifier au MJ pourquoi son personnage est capable de réaliser la tache envisagée. Cette justification peut utiliser comme argument l'une des compétences du personnage.
+\myjump[0.3]
 \begin{tabularx}{\linewidth}{|X}
 \emph{\og J'aimerais que mon personnage cherche du cerfeuille dans la forêt. Il devrait en être capable d'en trouver car il a été élève d'un druide et possède la compétence herboristerie 2. \fg}\\
 \end{tabularx}
+\myjump[0]
+\textbf{Ignore PV7/S3:} Ignore l'effet appliqué quand vous atteignez 7 de PV et 3 de stress.\newline
+\textbf{Parkour, Discret, Puissant, Intimidation:} Permet de justifier au MJ d'escalader une facade, défoncer une porte, être discret ou intimidant.
 
 
-
-\myjump[0.35]
-\textbf{Création de personnage}\newline
-Esquive et chance sont à 0, défense max à 4. Distribuer 10 points d'expérience dans l'arbre de progrésion. 6 points de connaissances sont disponibles et peuvent être distribués plus tard dans la partie. Choisir armes de départ qui font 4 de dégâts (3 si arme distance) et de l'armure qui s'additione à votre défense max-2. Le MJ à le dernier mot vis à vis de votre équipement
 
 \myjump[0]
-\textbf{Combat}\newline
-En combat, votre personnage peut réaliser 2 actions dont une qui inflige des dégâts.
-Lorsque votre personnage veut attaquer, il n'y a qu'un seul jet de dés à faire pour connaître les dégats qu'il infligera. Vous lancez 2d6 explosifs que vous comparez à votre Objectif de Combat (OC). Si le résultat est supérieur ou égal à  votre OC, vous additionez au jet de dés les dégats bonus de votre arbre et les dégats de votre arme.
+\indent\scbf{Création de personnage}\newline
+Esquive et chance sont à 0, défense max à 4, PV max à 12 et OC à 2. Distribuer 10 points d'expérience dans l'arbre de progression. 6 points de compétences sont disponibles et peuvent être distribués plus tard dans la partie. Choisir une armes de départ à 4 de dégâts (3 si arme distance) et de 2 armures qui s'additionnent à votre défense max-2. Le MJ à le dernier mot vis à vis de votre équipement
 
-$$
+\myjump[0]
+\indent\scbf{Combat}\newline
+En combat, votre personnage peut réaliser 2 actions dont une seule qui lance ses 2d6 de dégâts. Par exemple, attaquer puis pousser une bibliothèque sur un ennemi, les 2 actions font des dégâts mais seulement la première lance les 2d6, la seconde c'est au MJ d'interpreter.
+Lorsque votre personnage veut attaquer, il n'y a qu'un seul jet de dés à faire pour connaître les dégâts qu'il infligera. Vous lancez 2d6 explosifs que vous comparez à votre Objectif de Combat (OC). Si le résultat est inférieur ou égal à votre OC, vous additionnez au jet de dés vos dégâts bonus et les dégâts de votre arme.
+
+$
 \mbox{Dégâts infligés} =
 \left\{
     \begin{array}{ll}
-        (2d6 \ge \mbox{OC}) + \mbox{bonnus degâts arbre} + \mbox{dégats arme}\\
-(2d6 < \mbox{OC})
+        (2d6 \le \mbox{OC}) + \mbox{dégâts magiques} + \mbox{degâts bonus} + \mbox{dégats arme}\\
+(2d6 > \mbox{OC}) + \mbox{dégâts magiques}
     \end{array}
 \right.
-$$
+$
 
-\noindent
-\begin{tabularx}{\linewidth}{|X}
-\emph{Biglour utilise sa dague qui fait 4 de dégats. Il a débloqué 2 cibles dans son arbre alors son Objectif de Combat (OC) vaut 12-2=10. Il a aussi atteint 2 épées et a donc 2 dégats bonus.
-Il lance 2 dés 6 et obtient un 3 et un 6, le dés qui a atteint 6 explose et Biglour lance un dés supplémentaire qui fait 4. $3 + 6 + 4 = 13 \ge 10$ c'est suppérieur à son OC, il inflige donc $13 + 2 + 4 = 19$ de dégats. Au tours suivant il obtient $3 + 4 = 7 < 10$ et inflige 7 dégats}\\
-\end{tabularx}
+\noindent Lorsque votre personnage se fait attaquer, vous lancez un d6. Si le résultat est supérieur à votre esquive, le MJ vous indique les dégâts \og haut\fg de l'ennemi qui vous attaque, sinon, ce sont les dégâts \og bas\fg.
 
 
 
@@ -152,58 +150,45 @@ Il lance 2 dés 6 et obtient un 3 et un 6, le dés qui a atteint 6 explose et Bi
 \enluminure{L}{'improvisation} ne peut pas être utilisé pour solidifier du gameplay. Si la magie fait partie de votre univers mais qu'il n'y a pas de règles qui explique son fonctionement; alors cette magie est un outil scénaristique pour le MJ plutôt qu'un élément de gameplay pour les joueurs.
 
 \myjump[0]
-\textbf{Modules}\newline
+\indent\scbf{Modules}\newline
 \noindent Pour ajouter des éléments de gameplay au set de règles de ce jeu de rôle, vous pouvez ajourter des modules que vous retrouverez sur la page suivante : \href{https://github.com/kalharko/petit-jdr-universel}{github.com/kalharko/petit-jdr-universel}.
 
 
 
 \myjump[0]
-\textbf{Compétences}\newline
-Le cadre de \emph{compétence} de la feuille de personnage recueille tous les domaines où le personnage possède une maitrise ou un savoir. Pour réaliser des actions hors combat, les joueurs vont justifier pourquoi leur personnage est capable de réaliser la tache envisagée. Vous devez juger leur argumentaire en prenant en compte les compétences du personnage, sa condition et l'histoire. Les domaines techniques sont très faciles à juger, quelqu'un qui ne s'est jamais entrainé au crochetage, ne peut pas crocheter. Pour les situations plus nuancés le MJ doit prendre en compte l'histoire et choisir le jugement qui va ajouter le plus de drame et de rebondissement à l'histoire.\newline\newline
-\begin{tabularx}{\linewidth}{|X}
-\emph{Biglour veut s'introduire dans les archives de la guilde marchande. Grâce à sa compétence crochetage 2, Biglour a prévu de s'introduire par une porte de service. Mais il a alerté la garde sur son chemin et doit maintenant se dépécher de crocheter. Le MJ estime que les archives sont protégés par des serrures de bonne facture et Biglour aurais mis du temps à crocheter. Le MJ doit juger quelle issue offre le plus de drame, d'interêt pour les joueurs et de ramifications futur à l'histoire : échapper de peu à la garde et continuer sa mission, ou devoir confronter la garde immédiatement. }\\
-\end{tabularx}
-\myjump[0.35]
-Pour entrainer des compétences, les joueurs doivent trouver un personnage dans le jeu pour les aider à apprendre et investir du temps dans leur entrainement.
+\indent\scbf{Compétences}\newline
+Le cadre de \emph{compétence} de la feuille de personnage recueille tous les domaines où le personnage possède une maîtrise ou un savoir. Pour réaliser des actions hors combat, les joueurs vont justifier pourquoi leur personnage est capable de réaliser la tache envisagée. Vous devez juger leur argumentaire en prenant en compte les compétences du personnage, sa condition et l'histoire. Les domaines techniques sont très faciles à juger, quelqu'un qui ne s'est jamais entraîné au crochetage, ne peut pas crocheter. Pour les situations plus nuancés le MJ doit prendre en compte l'histoire et choisir le jugement qui va ajouter le plus de drame et de rebondissement à l'histoire.
+
+\myjump[0]
+Il est conseillé d'offrir des points de temps à vos joueurs, qui représentent le temps libre dont disposent les personnages entre 2 aventures. Ils peuvent les dépenser pour crafter un objet, améliorer ou apprendre une compétence ou un coup spécial.
+
+\myjump[0]
+\indent\scbf{Coups spéciaux}\newline
+Un coups spécial est une compétence utilisable une fois par combat qui inflige des dégâts ou un effet à un ennemi. C'est au joueurs de les inventer pour leurs personnages, et au MJ de réguler leurs effets. Le dernier mot revient toujours au MJ, il décide même si l'effet est appliqué à son boss ou non.
+
+\myjump[0]
+\indent\scbf{Équipement}\newline
+Les armes à distance se jouent comme les autres armes, mais elles infligent légèrement moins de dégâts. Les boucliers possèdent une faible attaque et un bonus de défense, pour pouvoir en profiter il faut avoir utilisé une action à son tour pour lever son bouclier. Le bonus de défense d'un bouclier permet de dépasser sa défense max.
 
 
 \myjump[0]
-\textbf{Équipement}\newline
-Les armes à distance se jouent comme les autres armes, mais elles infligent légèrement moins de dégâts. Les boucliers ont une statistique de dégâts et de défense. Cette défense ne compte pas dans le calcul de la défense total. Un joueur qui utilise un bouclier doit avoir tapé avec au tour précédent pour profiter de sa statistique de défense.
-
-
-\myjump[0]
-\textbf{Combat}\newline
-En combat les dégats des forces opposant les joueurs sont calculés ainsi :
-
-$$
-\mbox{Dégâts ennemi} =
-\left\{
-    \begin{array}{ll}
-        (1d6 \ge 2) => \mbox{degâts haut}\\
-        (1d6 < 2) => \mbox{dégâts bas}
-    \end{array}
-\right.
-$$
-
-
-\myjump[0]\noindent
-Pour préparer vos combats, vous pouvez remplir ce genre de tableau :\newline
+\indent\scbf{Combat}\newline
+Lorsque vous préparez un combat, les ennemis sont résumés par les informations suivantes :\newline
 \begin{tabularx}{\linewidth}{c|X}
 \hline
-    \textsc{\textbf{Nom/Titre}} & \emph{Guerrier Insecte}\\\hline
+    \scbf{Nom/Titre} & \emph{Guerrier Insecte}\\\hline
     \multicolumn{2}{@{}l}{
     \begin{tabularx}{\linewidth}{cXcXcX}
-        \textsc{\textbf{Degats bas}} & \emph{8} & \textsc{\textbf{Degats haut}} & \emph{12} & \textsc{\textbf{PV}} & \emph{20}\\\hline
+        \scbf{Degats bas} & \emph{8} & \scbf{Degats haut} & \emph{12} & \scbf{PV} & \emph{20}\\\hline
     \end{tabularx}
     }\\
     Description et & \emph{Un insecte à taille humaine, qui défends sa reine à tout prix.}\\
-    Coups spéciaux & \emph{Une fois par combat, utilise ses mandibules pour faire pour faire une attaque à 14 de dégâts haut.}\\
+    Coups spéciaux & \emph{Une fois par combat,  attaque à 14 de dégâts haut avec ses mandibules.}\\
 \hline
 \end{tabularx}
 
 \myjump[0.35]
-Comme règle générale (à ne pas suivre à la lettre). Les dégâts haut de l'ennemi le plus fort sont entre 4 et 6 points plus élevé que la défense max de votre groupe; et ses dégâts bas est 1 points plus élevé que la défense max de votre groupe; finalement il doit être presque one-shot-able.
+Les dégâts haut, bas et PV peuvent être déterminés grâce au tableur d'équilibrage fournit avec ce jeu de rôle. Il ne vous reste plus qu'à imaginer la personnalité de la créature et ses coups spéciaux. Cette méthode suis le paradigme de combat orienté action comme décrit par Matt Colvile : \href{https://youtu.be/y_zl8WWaSyI}{vidéo youtube}.
 
 
 
